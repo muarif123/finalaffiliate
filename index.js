@@ -2,9 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 app.use(express.json())
-app.use(cors({
-  origin: 'https://funnelup.biz'
-}));
+app.use(cors())
 app.listen(3000,()=>{
     console.log('Server is running');
 })
